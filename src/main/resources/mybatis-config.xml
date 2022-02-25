@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<package name="com.example.spring01" />
+	</typeAliases>
+
+<!-- 
+	<environments default="">
+		<environment id="">
+-->
+			<!-- JDBC(수동) / MANAGED(자동) -->
+<!--
+			<transactionManager type="MANAGED">		 
+ 			</transactionManager>
+-->
+ 			<!-- DB연결정보 (커넥션 관리 정보) driver / url / username / password -->
+<!--
+		<dataSource type="UNPOOLED">
+ 			</dataSource>
+		</environment>
+	</environments>
+-->
+	 <!-- 매퍼파일의 정보 -->
+<!--
+	<mappers>
+	
+	</mappers>
+-->
+</configuration>

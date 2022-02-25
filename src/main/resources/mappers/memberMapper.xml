@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="member">
+	<!-- 03. 회원정보 상세조회 -->
+	<select id="viewMember" resultType="com.supplyDepot.ytmaker.model.dto.MemberVO">
+		SELECT user_id AS userId, 
+		       user_name AS userName,
+               last_login AS lastLogin
+		  FROM TB_MEMBER
+		 WHERE user_id = #{userId}
+	</select>
+	
+	<!-- 06. 비밀번호 체크 -->
+	<select id="loginCheck" resultType="String">
+		SELECT user_name AS userName
+		  FROM TB_MEMBER
+		 WHERE user_id = #{userId} AND user_pw = #{userPw}
+	</select>
+</mapper>

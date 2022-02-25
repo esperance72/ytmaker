@@ -19,6 +19,5 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Workspace/ytmaker/src/main/webapp/WEB-INF/lib/mariadb-java-client-3.0.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

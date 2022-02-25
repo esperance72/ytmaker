@@ -3,19 +3,12 @@
 <html>
 <head>
 	<title>Home</title>
+<%@ include file="include/header.jsp" %>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
-asdfasdfa
-sdf
-asd
-fa
-sdf<br>
-a
-sdf
+<%@ include file="include/menu.jsp" %>
+	<c:if test="${msg == 'success'}">
+	<h2>${sessionScope.userName}(${sessionScope.userId})님 환영합니다.</h2>
+	</c:if>
 </body>
 </html>
